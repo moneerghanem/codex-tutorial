@@ -1,0 +1,14 @@
+[
+{"slug":"what-is-codex","title":"What is Codex?","desc":"Meet the agent. Keep your judgment.","time":"7 min","prereq":"Basic programming knowledge","sources":["cli","auth","best"]},
+{"slug":"setup","title":"Get it running","desc":"The right terminal, the right folder, your first session.","time":"15–25 min","prereq":"A computer, internet access and eligible Codex access","sources":["cli","install","auth","windows","wsl","ide"]},
+{"slug":"first-task","title":"Your first successful task","desc":"Understand a project, fix Reset, prove it works.","time":"20–30 min","prereq":"Codex installed; complete Get it running","sources":["cli","best","commands"]},
+{"slug":"instructions","title":"Give better instructions","desc":"Goal. Context. Constraints. Done when.","time":"10 min","prereq":"Try the first task","sources":["best"]},
+{"slug":"planning","title":"Plan and steer work","desc":"Make assumptions visible before they become code.","time":"8 min","prereq":"A running CLI session","sources":["best","commands"]},
+{"slug":"review","title":"Review and verify","desc":"A convincing answer is not a passing check.","time":"12 min","prereq":"A small change to review; Git for checkpoints","sources":["best","commands"]},
+{"slug":"context","title":"Context and sessions","desc":"Keep the important details close.","time":"8 min","prereq":"A CLI conversation","sources":["commands","best"]},
+{"slug":"agents-md","title":"Project instructions","desc":"Give future sessions a useful AGENTS.md.","time":"10 min","prereq":"Know how to run and check your project","sources":["agents","best"]},
+{"slug":"skills","title":"Reusable skills","desc":"Turn a useful checklist into a repeatable workflow.","time":"12 min","prereq":"Complete Project instructions","sources":["skills"]},
+{"slug":"tools","title":"Tools, MCP and plugins","desc":"Understand what a connection can actually do.","time":"8 min","prereq":"Understand files and permissions","sources":["mcp","skills","commands"]},
+{"slug":"troubleshooting","title":"When things go sideways","desc":"Diagnose first. Recover with a smaller next step.","time":"10 min","prereq":"No prerequisites; use whenever stuck","sources":["cli","auth","commands","wsl","best"]},
+{"slug":"beyond","title":"Beyond the basics","desc":"More power, more coordination. Entirely optional.","time":"9 min","prereq":"Comfortable reviewing and checking changes","sources":["subagents","worktrees","hooks","exec","commands"]}
+]

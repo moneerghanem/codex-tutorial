@@ -1,0 +1,24 @@
+<section id="purpose"><h2>Instructions that travel with the project</h2><p><code>AGENTS.md</code> is a Markdown file with project guidance for coding agents. Use a task prompt for today’s change, AGENTS.md for stable project expectations, and a skill for a reusable procedure selected when relevant.</p><p>For our counter, an instruction such as “no framework” should not have to be repeated every session. But AGENTS.md should describe real run and check commands, not wishful ones.</p></section>
+<section id="scope"><h2>Understand discovery and scope</h2><p>Codex builds guidance at session start: global guidance in its home directory, then project guidance along the path from the project root to the current directory. In each directory, an <code>AGENTS.override.md</code> takes precedence over <code>AGENTS.md</code>. Later, more local guidance overrides earlier guidance. Empty files are skipped and there is a configured size limit.</p><p>Do not assume a file in an unrelated sibling folder applies, or that changing guidance mid-session has already reloaded it. Restart and ask which instruction files were loaded when checking discovery. <a href="https://learn.chatgpt.com/docs/agent-configuration/agents-md">Exact discovery rules ↗</a></p></section>
+<section id="example"><h2>Write a useful first version</h2><p><strong>Goal:</strong> encode the counter’s working agreement. <strong>Where:</strong> create AGENTS.md in the extracted counter folder using your editor. This is example file content, not a shell command:</p><pre data-kind="File · AGENTS.md"><code># Counter project
+
+## Structure
+- index.html: semantic page and buttons.
+- style.css: layout and focus styles.
+- app.js: state transitions and DOM updates.
+
+## Run and check
+- Open index.html in a browser; reload after edits.
+- If Node is installed, run node check.mjs.
+- Manually check +, minus at zero, Reset, and keyboard use.
+
+## Conventions
+- Use plain HTML, CSS and JavaScript; no dependencies.
+- Keep count nonnegative and Reset at zero.
+- Preserve native button semantics and visible focus.
+
+## Completion
+- Review all changed files.
+- Report checks actually run and any blocked checks.
+- Do not publish changes unless requested.</code></pre><p>Why it helps: future sessions get the file map, real checks and completion conditions together. Likely result: the agent refers to these conventions when doing a task. Verify in a fresh session by asking it to summarize applicable guidance without editing files.</p><pre data-kind="CLI · prompt"><code>List the instruction files you loaded for this folder. Summarize the counter constraints and checks. Do not edit anything.</code></pre><p>If it misses the file, confirm capitalization, directory and session freshness. CLI <code>/init</code> can scaffold guidance, but review and adapt its output before treating it as project truth.</p></section>
+<section id="maintain"><h2>Keep it small and current</h2><p>Delete stale commands when the project changes. Put long background documents in reference files and point to them. Resolve contradictions explicitly. Avoid recording one-off task status as permanent policy. A useful test: could a new teammate follow the run/check section without guessing?</p><p>Practice: add this file after you fix the counter, then intentionally ask for a framework migration. Verify that the agent recognizes the conflict and asks for a decision rather than silently changing the project’s architecture.</p></section>

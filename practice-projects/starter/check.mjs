@@ -1,0 +1,16 @@
+import fs from 'node:fs';
+import vm from 'node:vm';
+import assert from 'node:assert/strict';
+const source=fs.readFileSync(new URL('app.js',import.meta.url),'utf8');
+const context=vm.createContext({});
+vm.runInContext(source,context);
+const model=context.CounterModel;
+assert.equal(model.nextCount(0,'plus'),1,'increment');
+assert.equal(model.nextCount(3,'reset'),0,'Reset must clear state');
+assert.equal(model.nextCount(0,'minus'),0,'zero lower bound');
+assert.equal(model.nextCount(1,'minus'),0,'decrement to zero');
+let count=0;for(let i=0;i<20;i++)count=model.nextCount(count,'minus');
+assert.equal(count,0,'repeated decrement');
+count=0;for(const action of ['plus','plus','reset','plus'])count=model.nextCount(count,action);
+assert.equal(count,1,'state after Reset');
+console.log('PASS: counter state transitions. DOM and keyboard checks still required.');

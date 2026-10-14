@@ -1,0 +1,1 @@
+{"name":"wtf-is-codex","private":true,"scripts":{"build":"node scripts/build.mjs","test":"node scripts/check.mjs","dev":"node scripts/serve.mjs"},"engines":{"node":">=18"}}

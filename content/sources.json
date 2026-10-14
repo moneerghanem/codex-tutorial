@@ -1,0 +1,128 @@
+[
+  {
+    "id": "cli",
+    "title": "Codex CLI",
+    "url": "https://learn.chatgpt.com/docs/codex/cli",
+    "scope": "Installation and the local coding loop"
+  },
+  {
+    "id": "commands",
+    "title": "Developer commands",
+    "url": "https://learn.chatgpt.com/docs/developer-commands?surface=cli",
+    "scope": "CLI commands, slash commands, shortcuts; check the selected surface"
+  },
+  {
+    "id": "auth",
+    "title": "Authentication",
+    "url": "https://learn.chatgpt.com/docs/auth",
+    "scope": "ChatGPT versus API credentials and account controls"
+  },
+  {
+    "id": "agents",
+    "title": "AGENTS.md discovery",
+    "url": "https://learn.chatgpt.com/docs/agent-configuration/agents-md",
+    "scope": "Global and project instruction precedence"
+  },
+  {
+    "id": "skills",
+    "title": "Build skills",
+    "url": "https://learn.chatgpt.com/docs/build-skills",
+    "scope": "Metadata, discovery, invocation and resources"
+  },
+  {
+    "id": "best",
+    "title": "Best practices",
+    "url": "https://learn.chatgpt.com/guides/best-practices",
+    "scope": "Context, planning and verification"
+  },
+  {
+    "id": "mcp",
+    "title": "OpenAI Docs MCP",
+    "url": "https://developers.openai.com/learn/docs-mcp",
+    "scope": "Documentation connection and exact setup command"
+  },
+  {
+    "id": "windows",
+    "title": "Windows sandbox",
+    "url": "https://learn.chatgpt.com/docs/windows/windows-sandbox",
+    "scope": "Native Windows execution"
+  },
+  {
+    "id": "wsl",
+    "title": "WSL",
+    "url": "https://learn.chatgpt.com/docs/windows/wsl",
+    "scope": "Linux tooling on Windows; WSL2"
+  },
+  {
+    "id": "ide",
+    "title": "Codex IDE extension",
+    "url": "https://learn.chatgpt.com/docs/codex/ide",
+    "scope": "Editor-based alternative"
+  },
+  {
+    "id": "subagents",
+    "title": "Subagents",
+    "url": "https://learn.chatgpt.com/docs/agent-configuration/subagents",
+    "scope": "Delegation and inherited permissions"
+  },
+  {
+    "id": "hooks",
+    "title": "Hooks",
+    "url": "https://learn.chatgpt.com/docs/hooks",
+    "scope": "Lifecycle automation and trust"
+  },
+  {
+    "id": "worktrees",
+    "title": "Worktrees",
+    "url": "https://learn.chatgpt.com/docs/environments/git-worktrees",
+    "scope": "Separate Git checkouts and desktop workflows"
+  },
+  {
+    "id": "exec",
+    "title": "Non-interactive mode",
+    "url": "https://learn.chatgpt.com/docs/non-interactive-mode",
+    "scope": "codex exec and automation"
+  },
+  {
+    "id": "pages",
+    "title": "What is GitHub Pages?",
+    "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages",
+    "scope": "Static hosting and project URLs"
+  },
+  {
+    "id": "deploy",
+    "title": "Configure a Pages publishing source",
+    "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site",
+    "scope": "Branch/root deployment"
+  },
+  {
+    "id": "install",
+    "title": "OpenAI Codex repository",
+    "url": "https://github.com/openai/codex/blob/main/README.md",
+    "scope": "Official npm installation alternative"
+  },
+  {
+    "id": "git",
+    "title": "Git tutorial",
+    "url": "https://git-scm.com/docs/gittutorial",
+    "scope": "Local checkpoints and reviewing changes"
+  },
+  {
+    "id": "revert",
+    "title": "Git revert",
+    "url": "https://git-scm.com/docs/git-revert",
+    "scope": "Reversing a reviewed commit"
+  },
+  {
+    "id": "node",
+    "title": "Node.js downloads",
+    "url": "https://nodejs.org/en/download",
+    "scope": "Runtime for the optional npm installation route and logic checks"
+  },
+  {
+    "id": "models",
+    "title": "Current model information",
+    "url": "https://learn.chatgpt.com/docs/models",
+    "scope": "Availability and reasoning-effort context; no fixed catalog claims"
+  }
+]
